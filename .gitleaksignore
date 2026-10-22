@@ -1,0 +1,25 @@
+# Gitleaks allowlist for verified upstream fixtures only
+#
+# These exact commit:path:rule:line fingerprints were reviewed against the
+# upstream vueuse/vueuse repository. The relevant file blobs match upstream
+# byte-for-byte at the same commits. They are public documentation/test
+# JWT examples and VitePress config fixtures, not credentials added by this fork.
+#
+# Keep this list fingerprint-specific. Do not use path-wide ignores here: a
+# newly introduced token in the same file should still be reported.
+
+df724509e0cb35a8b02aadaeb954d902b1810d13:packages/.vitepress/config.ts:generic-api-key:109
+c005dbefb4f46edfae1b5686deea7f97dd171102:skills/vueuse-functions/references/useJwt.md:jwt:21
+bcba58314057dc6200d23f803ece5b1e5e71c267:packages/integrations/useJwt/index.md:jwt:21
+d9352a3092c5469783d0a8f842f2ff4ebf0314c5:packages/integrations/useJwt/index.test.ts:jwt:15
+d9352a3092c5469783d0a8f842f2ff4ebf0314c5:packages/integrations/useJwt/demo.vue:jwt:6
+d9352a3092c5469783d0a8f842f2ff4ebf0314c5:packages/integrations/useJwt/index.test.ts:jwt:34
+7e178385796e68ebac51a31cdc27773b7877754b:packages/integrations/useJwt/demo.vue:jwt:6
+cc79501461d78bf9fea889721ec64305ae2ee9a9:packages/.vitepress/config.ts:generic-api-key:78
+8782e1761203cdc0bf41e95e38504fed98351c77:packages/.vitepress/config.ts:generic-api-key:80
+34e2c2c90c80085e0868a1da57e99028c007d83a:packages/.vitepress/config.ts:generic-api-key:132
+2efa26edb4ec2b4d52f36d278e1ad0112e327c89:packages/integrations/useJwt/demo.vue:jwt:17
+2efa26edb4ec2b4d52f36d278e1ad0112e327c89:packages/integrations/useJwt/index.md:jwt:23
+2efa26edb4ec2b4d52f36d278e1ad0112e327c89:packages/integrations/useJwt/index.test.ts:jwt:15
+2efa26edb4ec2b4d52f36d278e1ad0112e327c89:packages/integrations/useJwt/index.test.ts:jwt:41
+78bfc74a122d64c03209582abe4d5fe19ff65818:packages/.vitepress/config.js:generic-api-key:38
